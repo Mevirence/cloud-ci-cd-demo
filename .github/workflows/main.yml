@@ -24,7 +24,13 @@ jobs:
       
       - name: Run Tests
         run: npm test
-        
+
       - name: Display Success Message
         run: echo "Build Successful!"
       
+        #Day 4 part
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
