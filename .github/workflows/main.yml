@@ -24,11 +24,17 @@ jobs:
       
       - name: Run Tests
         run: npm test
+      
+      # Day 5 part
+      - name: Use Secret
+        run: echo "Secret stored safely"
+        env:
+          API_KEY: ${{ secrets.API_KEY}}
 
       - name: Display Success Message
         run: echo "Build Successful!"
       
-        #Day 4 part
+        # Day 4 part
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
