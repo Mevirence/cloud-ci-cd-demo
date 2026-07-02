@@ -1,0 +1,11 @@
+{
+  "name": "cloud-ci-cd-demo",
+  "version": "1.0.0",
+  "description": "Week 8 OJT CI/CD demo project - static site with GitHub Actions pipeline",
+  "scripts": {
+    "test": "echo \"Running Tests\" && exit 0"
+  },
+  "keywords": ["ci-cd", "github-actions", "ojt"],
+  "author": "Viktor Ocenar",
+  "license": "MIT"
+}
